@@ -4,23 +4,27 @@ body {
 }
 
 .intro-wrapper {
+  background-color: black;
   border-radius: 20px;
   display: flex;
-  height: 500px;
+  flex-wrap: wrap;
+  padding: 20px;
   margin-bottom: 20px;
+  justify-content: space-around;
 }
 
 .text-content {
-  background-color: #2f4f4f;
   color: white;
   padding: 20px;
-  width: 540px;
 }
 
 .img {
-  background-image: url("images/BackgroundImg2.jpg");
+  background-image: url("images/ProfilbildeHvit.jpg");
   background-size: cover;
-  width: 540px;
+  width: 340px;
+  border-radius: 50%;
+  height: 450px;
+  align-self: center;
 }
 
 .card-container-wrapper {
