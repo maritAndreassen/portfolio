@@ -1,9 +1,21 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: local("Segoe UI"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"),
+    url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf)
+      format("truetype");
+  font-weight: 400;
+}
+
 body {
   max-width: 1080px;
   margin: auto;
+  margin-top: 50px;
+  font-size: 16px;
 }
 
-.intro-wrapper {
+.intro-container {
   background-color: black;
   border-radius: 20px;
   display: flex;
@@ -13,13 +25,18 @@ body {
   justify-content: space-around;
 }
 
-.text-content {
-  color: white;
-  padding: 20px;
+.intro-container h1 {
+  font-size: 2.5rem;
+  font-style: italic;
 }
 
-.img {
-  background-image: url("images/ProfilbildeHvit.jpg");
+.intro-container .text-content {
+  color: white;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.intro-container img {
   background-size: cover;
   width: 340px;
   border-radius: 50%;
@@ -27,34 +44,95 @@ body {
   align-self: center;
 }
 
-.card-container-wrapper {
+.card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 20px;
+  padding: 0;
 }
 
-.card-container-wrapper a {
+.card-container li {
   text-decoration: none;
-  color: black;
+  color: white;
+  background-color: black;
+  margin-top: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
 }
 
-.card-container-wrapper a:hover {
+.card-container li:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card-container {
-  width: 320px;
-  height: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  margin: 20px;
+.card-container img {
+  height: 335px;
 }
 
 .card-container h1 {
-  padding-left: 20px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 0;
 }
 
-img {
-  width: 100%;
-  height: 335px;
+.link-container {
+  margin-bottom: 1rem;
+}
+
+.card-container a {
+  color: #d6249f;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.card-container a:hover {
+  text-decoration: underline;
+}
+
+.instagram-icon {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  line-height: 25px !important;
+  vertical-align: middle;
+
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.instagram-icon:hover {
+  background: #d6249f;
+}
+
+@media (max-width: 1032px) {
+  body {
+    margin-top: 0;
+  }
+
+  .intro-container {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .card-container {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
