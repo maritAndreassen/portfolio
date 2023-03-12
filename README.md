@@ -1,7 +1,7 @@
-# portfolio
-My portfolio from my first year studying Front-end development at Noroff
+# Portfolio
+My portfolio from my first year studying Front-end development at Noroff.
 
-![image](https://myblog.maritstuderer.one/wp-content/uploads/2023/03/Exam-1-Homepage.jpg)
+![image](https://github.com/maritAndreassen/portfolio/blob/main/PortfolioHomepage.jpg)
 
 The goal for this portfolio is to make a presentation of my self and show my three main projects that I have made in my year studying Front-end development at Noroff.
 
