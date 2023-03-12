@@ -84,6 +84,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.card-container p {
+  padding: 0 6px;
+}
+
 .card-container a {
   color: #d6249f;
   padding: 10px;
@@ -91,8 +95,15 @@ body {
   text-decoration: none;
 }
 
+.card-container a:focus {
+  background-color: #d6249f;
+  color: white;
+  border: 0;
+}
+
 .card-container a:hover {
-  text-decoration: underline;
+  border: 2px solid #d6249f;
+  padding: 8px;
 }
 
 .instagram-icon {
